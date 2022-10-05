@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink: rgba(255, 20, 212, 0.529);
+    --background: rgba(239, 229, 216, 0.762);
+}
+
+.overall {
+    position: relative;
+}
+
+.container {
+    background-image: url(./Images/Online\ security.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pink);
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.signUp-container {
+    width: 80%;
+    height: 500px;
+    position: relative;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 1);
+
+}
+
+.heading {
+    font-family: 'Henny Penny', cursive;
+    text-align: center;
+}
+
+.heading h1 {
+    margin-bottom: 2px;
+}
+
+.input-main {
+    height: auto;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin: 5px 50px;
+    width: 70%;
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.input-main::placeholder {
+    color: blue;
+    font-weight: 200;
+}
+
+.input-main:focus,
+textarea {
+    outline: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.2vw;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 27px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgb(23, 23, 247);
+    box-shadow: 16px 16px 32px #bebebe, -16px 16px 32px #ffffff;
+    cursor: grab;
+    margin: 20px 0 20px 105px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.button:hover {
+    background-color: var(--pink);
+    transform: scale(1.2, 1.2);
+
+}
+
+.alternative {
+    display: flex;
+}
+
+.social-media h3 {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.icon {
+    height: 30px;
+    font-size: 15px;
+    border: 0.5px solid blue;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 16px 16px 32px #bebebe, -16px 16px 32px #ffffff;
+    margin: 10px -30px 20px 45px;
+    cursor: grab;
+    display: inline-block;
+    padding: 5px;
+}
+
+.icon:hover {
+    background-color: var(--pink);
+    transform: scale(1.2, 1.2);
+}
+
+.facebook {
+    margin-left: 37px;
+}
+
+.icon p {
+    float: right;
+}
+
+.icon i {
+    width: 10px;
+}
+
+.heading {
+    display: inline;
+}
+
+@media screen and (max-width:319px) {
+    .icon {
+        width: 115px;
+        display: flex;
+        font-weight: bolder;
+        height: 20px;
+        margin-right: 5px;
+        margin-left: 30px;
+    }
+
+    .icon img {
+        width: 9px;
+        margin-right: 1.5px;
+    }
+
+    .button {
+        margin: 20px 25px 20px 30px;
+    }
+
+    .facebook {
+        font-size: 1.7vw;
+    }
+
+    .google {
+        margin-right: 20px;
+        font-size: 2.2vw;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    .icon {
+        width: 115px;
+        display: flex;
+        font-weight: bolder;
+        height: 20px;
+        margin-right: 5px;
+        margin-left: 30px;
+    }
+
+    .icon img {
+        width: 9px;
+        margin-right: 1.5px;
+    }
+
+    .button {
+        margin: 20px 25px 20px 30px;
+    }
+
+    .facebook {
+        font-size: 1.95vw;
+    }
+
+    .google {
+        margin-right: 20px;
+        font-size: 2.2vw;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    .button {
+        margin: 20px 25px 20px 60px;
+    }
+
+    .icon {
+        width: 100px;
+        display: flex;
+        font-size: 1.9vw;
+        font-weight: bolder;
+        height: 20px;
+        margin-right: 10px;
+        margin-left: 32px;
+    }
+
+    .icon img {
+        width: 9px;
+        margin-right: 1.5px;
+    }
+
+    .facebook {
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:470px) {
+    .button {
+        margin: 20px 0px 20px 66px;
+    }
+
+    .icon {
+        width: 115px;
+        display: flex;
+        font-size: 2.1vw;
+        font-weight: bolder;
+        height: 22px;
+
+    }
+
+    .icon img {
+        width: 12px;
+        margin-right: 1.5px;
+    }
+
+    .facebook {
+        font-size: 1.9vw;
+
+    }
+
+    .google {
+        margin-left: 70px;
+    }
+}
